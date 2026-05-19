@@ -9,5 +9,3 @@ mirror-to-github:
     - TOKEN=$(echo "$GITHUB_TOKEN" | base64 -d)
     - git remote add github https://${USERNAME}:${TOKEN}@github.com/${USERNAME}/${REPO}.git
     - git push github --mirror
-  rules:
-    - when: always
