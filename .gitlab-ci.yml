@@ -1,0 +1,13 @@
+mirror-to-github:
+  stage: .post
+  image: alpine/git
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - USERNAME=$(echo "$GITHUB_USERNAME" | base64 -d)
+    - REPO=$(echo "$GITHUB_REPO" | base64 -d)
+    - TOKEN=$(echo "$GITHUB_TOKEN" | base64 -d)
+    - git remote add github https://${USERNAME}:${TOKEN}@github.com/${USERNAME}/${REPO}.git
+    - git push github --mirror
+  rules:
+    - when: always
