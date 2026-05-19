@@ -1,8 +1,9 @@
+stages:
+  - mirror
+
 mirror-to-github:
-  stage: .post
+  stage: mirror
   image: alpine/git
-  variables:
-    GIT_STRATEGY: none
   script:
     - USERNAME=$(echo "$GITHUB_USERNAME" | base64 -d)
     - REPO=$(echo "$GITHUB_REPO" | base64 -d)
