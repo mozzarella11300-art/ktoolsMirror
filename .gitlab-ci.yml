@@ -1,5 +1,8 @@
+stages:
+  - mirror
+
 mirror-to-github:
-  stage: .post
+  stage: mirror
   image: alpine/git
   variables:
     GIT_STRATEGY: none
@@ -7,7 +10,7 @@ mirror-to-github:
     - USERNAME=$(echo "$GITHUB_USERNAME" | base64 -d)
     - REPO=$(echo "$GITHUB_REPO" | base64 -d)
     - TOKEN=$(echo "$GITHUB_TOKEN" | base64 -d)
+    - git clone --mirror https://gitlab-ci-token:${CI_JOB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git repo
+    - cd repo
     - git remote add github https://${USERNAME}:${TOKEN}@github.com/${USERNAME}/${REPO}.git
     - git push github --mirror
-  rules:
-    - when: always
