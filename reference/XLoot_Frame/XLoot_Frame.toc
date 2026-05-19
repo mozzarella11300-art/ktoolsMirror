@@ -1,0 +1,10 @@
+## Interface: 70300
+## Title: XLoot Frame
+## Notes: A customizable, skinnable loot frame.
+## Version: 7.3-3
+## Author: Xuerian
+## X-Category: Inventory
+
+## Dependencies: XLoot
+
+load.xml
