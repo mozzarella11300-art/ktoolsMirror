@@ -3,7 +3,9 @@ stages:
 
 mirror-to-github:
   stage: mirror
-  image: alpine/git
+  image: alpine
+  before_script:
+    - apk add --no-cache git
   variables:
     GIT_STRATEGY: none
   script:
