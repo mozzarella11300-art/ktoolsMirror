@@ -6,7 +6,6 @@
 ## Version: 2.1.0
 ## SavedVariables: KToolsLootDB KToolsLootProfileNames KToolsLootMinimapDB
 
-lib\load.xml
 locale\load.xml
 init.lua
 core\load.xml

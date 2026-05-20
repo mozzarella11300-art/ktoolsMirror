@@ -35,3 +35,9 @@
 
 ### [12] Claude, 2026-05-20
 Патч 0006a: bugfix — KToolsLootMinimapDB в TOC, SKINNING_CLOSE в enUS, && → and в reference-map. Патч 0006b: ТЗ по переработке KToolsAutoloot (`.claude/tz-autoloot-redesign.md`).
+
+### [13] Пользователь, 2026-05-20
+Ответы на вопросы ТЗ: токены убрать, свич = другой режим, 2 кнопки (Импорт/Экспорт), без переоткрытия окна, ">= ilvl". Библиотеки перенесены в KTools/lib вручную.
+
+### [14] Claude, 2026-05-20
+Патч 0007: KTools/lib/load.xml (AceSerializer + LibDeflate), KToolsAutoloot.toc (убрана мёртвая ссылка lib\load.xml), tz-autoloot-redesign.md (шаг 1 ✅, решения, mockup обновлён). ТЗ утверждено.
