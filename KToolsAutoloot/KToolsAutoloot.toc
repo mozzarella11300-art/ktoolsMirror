@@ -3,7 +3,7 @@
 ## Notes: Automatic loot collection.
 ## Notes-ruRU: Автоматический сбор добычи.
 ## Author: Kawfia
-## Version: 1.1.1
+## Version: 1.2.0
 ## SavedVariables: KToolsLootDB KToolsLootProfileNames KToolsLootMinimapDB
 
 locale\load.xml
