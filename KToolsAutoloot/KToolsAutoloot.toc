@@ -4,7 +4,7 @@
 ## Notes-ruRU: Автоматический сбор добычи.
 ## Author: Kawfia
 ## Version: 2.1.0
-## SavedVariables: KToolsLootDB KToolsLootProfileNames
+## SavedVariables: KToolsLootDB KToolsLootProfileNames KToolsLootMinimapDB
 
 lib\load.xml
 locale\load.xml

@@ -21,12 +21,6 @@
 
 ## [TEMP] Временные — текущий этап
 
-### [6] Claude, 2026-05-16
-Патч 0003.patch: реализован window.lua (AceGUI Frame + TreeGroup + SetStatusText).
-
-### [7] Пользователь, 2026-05-16
-changelog.md — общая картина. MEMORIES.md — личные заметки ИИ. Минорные патчи — с буквой.
-
 ### [8] Claude, 2026-05-16
 Патч 0003a.patch: секция KTools в changelog.md (минорный).
 
@@ -35,3 +29,9 @@ changelog.md — общая картина. MEMORIES.md — личные зам�
 
 ### [10] Claude, 2026-05-16
 Патч 0004.patch: ядро KTools полностью. locale/enUS.lua+ruRU.lua, init.lua, window.lua, minimap.lua. Нумерация исправлена.
+
+### [11] Пользователь, 2026-05-20
+Сессия формирования ТЗ. Полная переработка KToolsAutoloot: модульная архитектура, переработка профиля, два режима UI (быстрые/список), импорт/экспорт через AceSerializer+LibDeflate (ElvUI-подход), два формата (сжатый/читаемый).
+
+### [12] Claude, 2026-05-20
+Патч 0006a: bugfix — KToolsLootMinimapDB в TOC, SKINNING_CLOSE в enUS, && → and в reference-map. Патч 0006b: ТЗ по переработке KToolsAutoloot (`.claude/tz-autoloot-redesign.md`).

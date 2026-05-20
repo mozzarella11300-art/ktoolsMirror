@@ -47,7 +47,7 @@ KTools:RegisterModule("autoloot", {
 
 | Файл | Назначение |
 |---|---|
-| `/home/user/ktoolsMirror/KToolsAutoloot/KToolsAutoloot.toc` | TOC, SavedVariables: `KToolsLootDB KToolsLootProfileNames` |
+| `/home/user/ktoolsMirror/KToolsAutoloot/KToolsAutoloot.toc` | TOC, SavedVariables: `KToolsLootDB KToolsLootProfileNames KToolsLootMinimapDB` |
 | `/home/user/ktoolsMirror/KToolsAutoloot/init.lua` | `KToolsLoot` (AceAddon + AceEvent), `/ktloot`, `OnEnable → RegisterLootEvents` |
 | `/home/user/ktoolsMirror/KToolsAutoloot/core/autoloot.lua` | `ShouldLoot`, `OnLootOpened`, `OnItemDataReceived`, `OnLootClosed`, `OnBindConfirm`, `OnSpellcastStart`, `RegisterLootEvents` |
 | `/home/user/ktoolsMirror/KToolsAutoloot/core/profile.lua` | `DEFAULTS`, `InitDB` (AceDB-3.0), `Profile()` |
@@ -504,7 +504,7 @@ CLASS_BATTLEPET  = 17
 **Функция решения `ShouldLoot(slot)` (строка 98):**
 1. Деньги → `p.gold`
 2. Валюта → `p.currency`
-3. Кастомный список (приоритет) → `p.useList && p.items[itemID].active`
+3. Кастомный список (приоритет) → `p.useList and p.items[itemID].active`
 4. Квест-предмет → `p.quest`
 5. Реагенты `classID=7` → `p.reagents`
 6. Рецепты `classID=9` → `p.recipes`
