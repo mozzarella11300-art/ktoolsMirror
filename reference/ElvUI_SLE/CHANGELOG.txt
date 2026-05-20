@@ -1,0 +1,20 @@
+v3.38 [June 7th 2018]
+This is probably the last release version before BfA hits.
+Any further fixes will be only available via alpha build.
+
+Fixes:
+- Fixed some icons missing from minimap icons bar after v3.36
+- Fixed (probably) a random armory error caused by invalid item data from artifact weapons
+- Fixed tab fonts for inspect armory not applying on load
+- Fixed garrison report button jumping around after loading screens
+- Fixed deconstruct mode not working on lockpick with a colorblind mode in wow emabled
+- Fixed broken custom textures for classbar when suddenly a new section is added
+- Fixed an error in config when no gold data is available for some reason
+- Fixed (probably) role icons in raid interface being broken
+Additions:
+- Added a no backdrop variant for location panel templates
+- Added class option for armory background config
+Changes:
+- Updated LibRealmInfo
+- Changed the way legacy modes work (e.g. farm and garrison toolbars). Can take longer to load buttons on some occasions.
+- Adopted changes in ElvUI's chat from version 10.74
