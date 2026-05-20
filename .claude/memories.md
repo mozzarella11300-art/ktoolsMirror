@@ -41,3 +41,9 @@
 
 ### [14] Claude, 2026-05-20
 Патч 0007: KTools/lib/load.xml (AceSerializer + LibDeflate), KToolsAutoloot.toc (убрана мёртвая ссылка lib\load.xml), tz-autoloot-redesign.md (шаг 1 ✅, решения, mockup обновлён). ТЗ утверждено.
+
+### [15] Пользователь, 2026-05-20
+Начать реализацию. Версии с нуля: KTools 1.1.0, KToolsAutoloot 1.1.0. +0.0.1 за каждый код-патч. Патчи — против ветки пользователя (master).
+
+### [16] Claude, 2026-05-20
+Патч 0008 (шаг 2): core/profile.lua — новая схема DEFAULTS (mode, quality_N_*, убраны tokens/useQualityFilter/quality/ilvl/useList), добавлен QRow(q). KToolsAutoloot v1.1.1.
