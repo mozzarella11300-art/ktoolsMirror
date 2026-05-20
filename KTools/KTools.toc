@@ -3,7 +3,7 @@
 ## Notes: Core framework and shared libraries for KTools addons.
 ## Notes-ruRU: Ядро и общие библиотеки для аддонов KTools.
 ## Author: Kawfia, Claude
-## Version: 1.0.1
+## Version: 1.0.11
 ## SavedVariables: KToolsMinimapDB
 
 lib\load.xml
